@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-image: /assets/img/bg.jpg
+feature_image: /assets/img/bg.jpg
 feature_text: |
   # Projetos
 ---
