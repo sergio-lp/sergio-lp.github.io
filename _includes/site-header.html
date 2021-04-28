@@ -1,14 +1,10 @@
 <header class="header">
-<div class="container">
-{% include site-logo.html %}
-{% include nav-header.html %}
-</div>
-{% include site-feature.html %}
-</header>
+  <div class="container">
+    {% if site.logo %}{% include site-logo.html %}{% endif %}
 
-<!--collect all blog tags
-http://longqian.me/2017/02/09/github-jekyll-tag/
--->
-{% if site.tags != "" %}
-  {% include collect-tags.html %}
-{% endif %}
+    {% include nav-header.html %}
+  </div>
+
+  {% include site-feature.html %}
+
+</header>
