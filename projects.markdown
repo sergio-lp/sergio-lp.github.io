@@ -13,7 +13,7 @@ feature_text: |
    <div class="project-title">
    <h4><b><a href="https://www.fcm.unicamp.br/adolescentes/">Adolescentes</a></b></h4>
    </div>
-   {% include figure.html image="logo_original.png" width="225" %}
+   {% include figure.html image="/assets/logo_original.png" width="225" %}
 
 <a href="https://www.fcm.unicamp.br/adolescentes/">Site</a> e <a href="https://play.google.com/store/apps/details?id=com.nrgbrainn.adolescentes">App</a> focados em medicina preventiva e promoção de saúde ao público adolescente.
 <br/><br/>
@@ -33,7 +33,7 @@ feature_text: |
    <div class="project-title">
    <h4><b>Track My Show</b></h4>
    </div>
-   {% include figure.html image="bugdroid.png" width="125" %}
+   {% include figure.html image="/assets/bugdroid.png" width="125" %}
 
 A Simple Android app for getting information about your favorite movies and TV shows.<br/>
 
