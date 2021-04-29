@@ -4,7 +4,7 @@
 layout: page
 feature_image: /assets/img/bg.jpg
 feature_text: |
-# Projetos
+  # Projetos
 ---
 <link rel="stylesheet" href="/styles.css">
 
