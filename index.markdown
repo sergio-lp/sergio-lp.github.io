@@ -31,7 +31,7 @@ Concluído
 - **Monitor de Embriologia Humana**  
 [Programa de Apoio Didático](https://www.prg.unicamp.br/graduacao/pad/)  
 Profº Luís Antônio Violin Dias Pereira  
-Disciplinas: BS123/BS102  
+Disciplinas: [BS121/BS102](https://www.dac.unicamp.br/portal/caderno-de-horarios/2021/1/S/G/IB/BS102)  
 2020 ➝ 2021
 <br/><br/>
 - **Projeto Adolescentes**  
