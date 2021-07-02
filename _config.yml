@@ -94,7 +94,7 @@ encoding: utf-8 # Make sure the encoding is right
 lang: pt-BR # Set the site language
 title: "Sérgio Polo" # Site name or title, also used in jekyll-seo-tag
 # logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "Graduando em Medicina (FCM - Unicamp), entusiasta em desenvolvimento Android e apaixonado por tecnologia." # Site description and default description, also used in jekyll-seo-tag
+description: "Sérgio Lourenço Polo Filho | Graduando em Medicina (FCM - Unicamp), entusiasta em desenvolvimento Android e apaixonado por tecnologia." # Site description and default description, also used in jekyll-seo-tag
 url: "sergio-lp.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 email: "sergio_lpf@outlook.com"
