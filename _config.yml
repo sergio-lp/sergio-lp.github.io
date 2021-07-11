@@ -93,7 +93,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: pt-BR # Set the site language
 title: "Sérgio Polo" # Site name or title, also used in jekyll-seo-tag
-# logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "favicon.ico" # Site logo, also used in jekyll-seo-tag
 description: "Sérgio Lourenço Polo Filho | Graduando em Medicina (FCM - Unicamp), entusiasta em desenvolvimento Android e apaixonado por tecnologia." # Site description and default description, also used in jekyll-seo-tag
 url: "https://sergio-lp.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
@@ -105,9 +105,9 @@ google_analytics: "G-0JQHQ16G1L"
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
 # 8. Site favicons & manifest icons
-#favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-#  16: '/assets/logos/logo@16px.png'
-#  32: '/assets/logos/logo@32px.png'
+favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
+  16: 'favicon-16x16.png'
+  32: 'favicon-32x32.png'
 #  96: '/assets/logos/logo@96px.png'
 #  120: '/assets/logos/logo@120px.png'
 #  144: '/assets/logos/logo@144px.png'
