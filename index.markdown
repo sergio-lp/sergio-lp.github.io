@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
+title: Home
 feature_image: /assets/img/bg.jpg
 feature_text: |
   # Sérgio Polo
