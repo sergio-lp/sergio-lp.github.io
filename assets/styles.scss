@@ -39,6 +39,21 @@ $monospacetype: (
   cap-height: 0.68
 ) !default;
 
+html {
+  scroll-behavior: smooth;
+}
+
+.docs {
+  background: #2c2c2c;
+  padding: 50px;
+}
+
+.img_doc {
+  float: right;
+  display: block;
+  align-self: center;
+}
+
 li::first-line {
   color: #05bf85;
 }

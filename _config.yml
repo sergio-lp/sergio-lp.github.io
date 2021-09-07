@@ -125,6 +125,8 @@ navigation_header:
   url: /contact/
 - title: Github
   url: https://github.com/sergio-lp
+- title: Assinatura digital
+  url: /signature/
 
 navigation_footer:
 - title: Made with jekyll and Alembic

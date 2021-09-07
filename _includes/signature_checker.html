@@ -1,0 +1,69 @@
+<div class="form  form--search">
+  <form id="contact-form" action="javascript:;" onsubmit="formSubmit(this)">
+    <label class="label" for="search">Código de identificação do documento:</label>
+    <input class="input" id="search" type="search" name="search" placeholder="ex: REQ_060921_234" autocomplete="off" />
+    <input type="submit" value="Procurar">
+    <ul class="list  list--results" id="list">
+        <!-- results go here -->
+    </ul>
+  </form>
+</div>
+
+<script type="text/javascript" src="{{ "/assets/scripts/fetch.js" | relative_url }}"></script>
+<script type="text/javascript">
+  const docs = {{ site.data.docs | jsonify }};
+  const field = document.querySelector('#search');
+  const resultsList = document.querySelector('#list');
+  resultsList.innerHTML = ""
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const doc = urlParams.get('doc');
+  if (doc != null) {
+    formSubmit({"search": doc})
+  }
+
+  function findResults(termToMatch, docs) {
+    return docs.filter(item => {
+      if (item.id === termToMatch){
+        return item
+      }
+    });
+  }
+
+  function formSubmit(form) {
+    if (form.search.value != null) {
+      resultsArray = findResults(form.search.value, docs);
+    } else {
+      resultsArray = findResults(form.search, docs)
+    }
+    const html = resultsArray.map(item => {
+      return `
+        <div class="docs">
+          <h4><a target="_blank" rel="noopener noreferrer" href="${item.url}">${item.id}</a></h4><br>
+          <b>Assinado por: </b>${item.signed_by}<br>
+          <a target="_blank" rel="noopener noreferrer" href="${item.url}"><img class="img_doc" align="right" height="50" width="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/833px-PDF_file_icon.svg.png" alt=""></a>
+          <b>Data da assinatura: </b>${item.date}<br>
+          <b>Natureza do documento: </b>${item.nature}<br>
+          <b>Formato do documento: </b>${item.format}<br><br>
+
+          <a target="_blank" rel="noopener noreferrer" href="${item.url}"><button type="button" name="button">Visualizar documento</button></a>
+        </div>
+        `;
+    }).join('');
+    if ((resultsArray.length == 0) || (this.value == '')) {
+      resultsList.innerHTML = `<p>Desculpe, documento não encontrado.</p>`;
+    } else {
+      resultsList.innerHTML = html;
+    }
+
+    window.scrollTo(0,document.body.scrollHeight);
+
+  }
+
+  field.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      formSubmit(field)
+    }
+  });
+</script>
+<noscript>Habilite o javascript para utilizar esta função.</noscript>
