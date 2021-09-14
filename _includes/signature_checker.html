@@ -39,7 +39,7 @@
     const html = resultsArray.map(item => {
       return `
         <div class="docs">
-          <h4><a target="_blank" rel="noopener noreferrer" href="${item.url}">${item.id}</a></h4><br>
+          <h4><a target="_blank" rel="noopener noreferrer" href="${item.url}">${item.id} - ${item.name}</a></h4><br>
           <b>Assinado por: </b>${item.signed_by}<br>
           <a target="_blank" rel="noopener noreferrer" href="${item.url}"><img class="img_doc" align="right" height="50" width="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/833px-PDF_file_icon.svg.png" alt=""></a>
           <b>Data da assinatura: </b>${item.date}<br>
