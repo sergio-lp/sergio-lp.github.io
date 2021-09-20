@@ -33,7 +33,6 @@ Concluído
 [Programa de Apoio Didático](https://www.prg.unicamp.br/graduacao/pad/)  
 Profº Luís Antônio Violin Dias Pereira  
 Disciplinas: [BS121](https://www.dac.unicamp.br/portal/caderno-de-horarios/2020/1/S/G/IB/BS121)/[BS102](https://www.dac.unicamp.br/portal/caderno-de-horarios/2021/1/S/G/IB/BS102)/[BS202](https://www.dac.unicamp.br/portal/caderno-de-horarios/2021/2/S/G/IB/BS202)
-
 2020 ➝ 2021
 <br/><br/>
 - **Projeto Adolescentes**  
