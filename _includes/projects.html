@@ -1,0 +1,72 @@
+{% for item in site.data.projects %}
+
+<div class="card">
+  <img class="project-image" src="{{item.img}}" width="150">
+  <div class="card-container">
+    <span class="project-title">{{item.title}}</span>
+    <div class="authors">
+      {{item.authors}}
+    </div>
+    {% if item.details != '' and item.details != ' ' and item.details != null %}
+      <div class="chip">Detalhes</div>
+    {% endif %}
+    {% if item.pdf != '' and item.pdf != ' ' and item.pdf != null %}
+      <a href="{{item.pdf}}" class="chip" target="_blank" rel="noopener noreferrer">
+        <span class="fas fa-file-pdf" style="margin-right: 5px;"></span>
+        PDF
+      </a>
+    {% endif %}
+    {% if item.site != '' and item.site != ' ' and item.site != null %}
+      <a class="chip" href="{{item.site}}" target="_blank" rel="noopener noreferrer">
+        <span class="fas fa-globe-americas" style="margin-right: 5px;"></span>
+        Site
+      </a>
+    {% endif %}
+    {% if item.app != '' and item.app != ' ' and item.app != null %}
+      <a href="{{item.app}}" class="chip" target="_blank" rel="noopener noreferrer">
+        <span class="fab fa-android" style="margin-right: 5px;"></span>
+        App
+      </a>
+    {% endif %}
+    {% if item.news != '' and item.news != ' ' and item.news != null %}
+    {% for news in item.news %}
+      <a href="{{news.url}}" class="chip" target="_blank" rel="noopener noreferrer">
+        <span class="fas fa-newspaper" style="margin-right: 5px;"></span>
+        {{news.title}}
+      </a>
+    {% endfor %}
+    {% endif %}
+
+    {% if item.publications != '' and item.publications != ' ' and item.publications != null %}
+    <h3 class="project-title"><b>Publicações</b></h3>
+      {% for pub in item.publications %}
+        <div class="publication">
+          <b><span class="fas fa-file-alt" style="margin-right:10px" style="margin-right: 5px;"></span>{{pub.title}}</b><br>
+          <span class="authors">{{pub.authors}}</span><br>
+          <span class="authors"><b>{{pub.location}}</b></span><br>
+          {% if pub.details != null %}
+            <a href="{{pub.details}}" class="chip" target="_blank" rel="noopener noreferrer">Detalhes</a>
+          {% endif %}
+          {% if pub.pdf != null %}
+            <a href="{{pub.pdf}}" class="chip" target="_blank" rel="noopener noreferrer">
+              <span class="fas fa-file-pdf" style="margin-right: 5px;"></span>
+              PDF
+            </a>
+          {% endif %}
+          {% if pub.slides != null %}
+            <a href="{{pub.slides}}" class="chip" target="_blank" rel="noopener noreferrer">
+              <span class="fas fa-file-powerpoint" style="margin-right: 5px;"></span>
+              Slides
+            </a>
+          {% endif %}
+          {% if pub.doi != null %}
+            <a href="{{pub.doi}}" class="chip" target="_blank" rel="noopener noreferrer">DOI
+            </a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+{% endfor %}

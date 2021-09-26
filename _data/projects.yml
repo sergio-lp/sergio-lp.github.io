@@ -1,0 +1,27 @@
+- title: <a href="https://www.fcm.unicamp.br/adolescentes/" target="_blank" rel="noopener noreferrer">Adolescentes</a>
+  authors: Letícia Mansano, <b>Sérgio Polo</b>, Thaís Tawil, Ricardo Nunes, Lília Li
+  app: https://play.google.com/store/apps/details?id=com.nrgbrainn.adolescentes
+  site: https://www.fcm.unicamp.br/adolescentes/
+  img: /assets/logo_original.png
+  news:
+    - title: Jornal Unicamp
+      url: https://www.unicamp.br/unicamp/index.php/ju/noticias/2021/02/24/site-e-aplicativo-para-promocao-da-saude-de-adolescentes-sao-lancados-por
+    - title: G1 Campinas
+      url: https://g1.globo.com/sp/campinas-regiao/noticia/2021/02/25/unicamp-lanca-aplicativo-e-site-para-explicar-temas-relacionados-a-saude-para-adolescentes.ghtml
+    - title: O Liberal
+      url: https://liberal.com.br/mais/bem-estar/unicamp-lanca-site-e-aplicativo-de-saude-adolescente-1468341/
+    - title: BVSMS
+      url: https://bvsms.saude.gov.br/grupo-de-pesquisa-da-unicamp-lanca-site-e-aplicativo-para-promocao-da-saude-de-adolescentes/
+  publications:
+    - title: Aplicativo Adolescentes (Registro de Software)
+      authors: Lília Freire Rodrigues de Souza Li, Ricardo Rodrigues Nunes, Letícia Mansano de Souza, <b>Sérgio Lourenço Polo Filho</b>, Thaís Tawil
+      location: Instituto Nacional da Propriedade Industrial (BR512021001141-4)
+      pdf: /pdf/certificado_inpi_adolescentes.pdf
+    - title: Desenvolvimento de intervenções digitais para promoção de saúde e autocuidado a pacientes adolescentes com doenças crônicas
+      authors: <b>Sérgio Polo</b>, Letícia Mansano de Souza, Thaís Tawil, Ricardo Rodrigues Nunes, Lília Li
+      location: Congresso de Medicina da Universidade Estadual de Londrina (COMUEL'21)
+      pdf: /pdf/adolescentes_comuel.pdf
+      slides: /pdf/adolescentes_comuel_slides.pdf
+    - title: Desenvolvimento de duas intervenções digitais (aplicativo e <em>website</em>) para fortalecimento do autocuidado e resiliência em pacientes adolescentes com doenças crônicas
+      authors: Letícia Mansano, Thaís Tawil, <b>Sérgio Polo</b>, Ricardo Nunes, Lilia Li
+      location: Congresso Médico Acadêmico da Unicamp (CoMAU'21)

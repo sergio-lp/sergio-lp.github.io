@@ -7,9 +7,11 @@ feature_image: /assets/img/bg.jpg
 feature_text: |
   # Projetos
 ---
-<link rel="stylesheet" href="/styles.css">
 
-<div class="card">
+{% include projects.html %}
+
+
+<!--<div class="card">
   <div class="card-container">
     <div class="project-title">
       <h4><b><a href="https://www.fcm.unicamp.br/adolescentes/">Adolescentes</a></b></h4>
@@ -18,16 +20,12 @@ feature_text: |
 
     <div id="myModal" class="modal">
 
-      <!-- The Close Button -->
       <span class="close">&times;</span>
 
-      <!-- Modal Content (The Image) -->
       <div class="modal-content" id="img01">
 
-        <!-- Slideshow container -->
         <div class="slideshow-container">
 
-          <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
             <div class="numbertext">1 / 4</div>
             <img src="/assets/img/adolescentes_1.png" style="width:100%">
@@ -48,13 +46,11 @@ feature_text: |
             <img src="/assets/img/adolescentes_4.png" style="width:100%">
           </div>
 
-          <!-- Next and previous buttons -->
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
 
-        <!-- The dots/circles -->
         <div style="text-align:center">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
@@ -152,4 +148,4 @@ feature_text: |
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
   }
-</script>
+</script>-->

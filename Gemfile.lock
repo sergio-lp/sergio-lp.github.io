@@ -114,10 +114,10 @@ PLATFORMS
 DEPENDENCIES
   alembic-jekyll-theme
   jekyll-feed
-  jekyll-include-cache
   jekyll-mentions
   jekyll-paginate
   jekyll-redirect-from
+  jekyll-sitemap
   jemoji
   webrick (~> 1.7)
 
