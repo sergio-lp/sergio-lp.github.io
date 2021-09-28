@@ -89,11 +89,14 @@ li::first-line {
   color: #05bf85;
 }
 
-.authors {
-  color: #05bf85;
+.pub-authors {
+  color: #D3D3D3;
   font-size: 12pt;
-  text-align: justify;
-  text-emphasis: bold;
+}
+
+.pub-location {
+  color: #05bf85;
+  font-weight: bold;
 }
 
 .project-title {

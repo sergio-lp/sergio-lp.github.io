@@ -4,7 +4,7 @@
   <img class="project-image" src="{{item.img}}" width="150">
   <div class="card-container">
     <span class="project-title">{{item.title}}</span>
-    <div class="authors">
+    <div class="pub-location">
       {{item.authors}}
     </div>
     {% if item.details != '' and item.details != ' ' and item.details != null %}
@@ -42,8 +42,8 @@
       {% for pub in item.publications %}
         <div class="publication">
           <b><span class="fas fa-file-alt" style="margin-right:10px" style="margin-right: 5px;"></span>{{pub.title}}</b><br>
-          <span class="authors">{{pub.authors}}</span><br>
-          <span class="authors"><b>{{pub.location}}</b></span><br>
+          <span class="pub-authors">{{pub.authors}}</span><br>
+          <span class="pub-location"><b>{{pub.location}}</b></span><br>
           {% if pub.details != null %}
             <a href="{{pub.details}}" class="chip" target="_blank" rel="noopener noreferrer">Detalhes</a>
           {% endif %}
