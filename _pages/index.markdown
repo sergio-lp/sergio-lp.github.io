@@ -4,6 +4,7 @@
 
 layout: page
 title: Home
+permalink: /
 feature_image: /assets/img/bg.jpg
 feature_text: |
   # Sérgio Polo

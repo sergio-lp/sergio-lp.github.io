@@ -4,6 +4,7 @@
 
 layout: page
 title: Assinatura eletrônica
+permalink: /signature/
 feature_image: /assets/img/bg.jpg
 feature_text: |
   # Assinatura eletrônica
