@@ -44,6 +44,10 @@
           <b><span class="fas fa-file-alt" style="margin-right:10px" style="margin-right: 5px;"></span>{{pub.title}}</b><br>
           <span class="pubauthors">{{pub.authors}}</span><br>
           <span class="publocation"><b>{{pub.location}}</b></span><br>
+          {% if pub.award != null %}
+            <span class="fas fa-file-pdf" style="margin-right: 5px;"></span>
+            <a href="{{pub.award}}" class="chip" target="_blank" rel="noopener noreferrer">Premiação</a>
+          {% endif %}
           {% if pub.details != null %}
             <a href="{{pub.details}}" class="chip" target="_blank" rel="noopener noreferrer">Detalhes</a>
           {% endif %}
