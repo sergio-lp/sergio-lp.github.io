@@ -26,16 +26,16 @@ exclude:
 
 # 2. Installed Gems
 plugins:
-- jekyll-sitemap
+- jekyll-seo-tag
 - jekyll-mentions
 - jekyll-remote-theme
-- jekyll-paginate
-- jekyll-seo-tag
+- jemoji
+- jekyll-sitemap
 - jekyll-redirect-from
+- jekyll-paginate
 - jekyll-feed
 - jekyll-commonmark
 - jekyll-include-cache
-- jemoji
 
 
 # 3. Gem settings

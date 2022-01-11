@@ -5,6 +5,8 @@ permalink: /404.html
 indexing: false
 sitemap: false
 layout: page
+feature_title: 404
+feature_description: Ops! Não encontrei esta página... Será que você clicou onde não devia? 🤔
 feature_text: |
   # 404
 feature_image: /assets/img/bg.jpg

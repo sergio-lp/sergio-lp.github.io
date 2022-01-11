@@ -5,10 +5,11 @@ layout: page
 title: Projetos
 permalink: /projects/
 feature_image: /assets/img/bg.jpg
+feature_title: Projetos
 feature_text: |
   # Projetos
 ---
-
+<br/>
 {% include projects.html %}
 
 

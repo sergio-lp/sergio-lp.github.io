@@ -6,10 +6,13 @@ layout: page
 title: Home
 permalink: /
 feature_image: /assets/img/bg.jpg
+feature_title: Sérgio Polo
+feature_description: Graduando em Medicina (FCM - Unicamp), entusiasta em desenvolvimento Android e apaixonado por tecnologia.
 feature_text: |
   # Sérgio Polo
   **Graduando em Medicina (FCM - Unicamp), entusiasta em desenvolvimento Android e apaixonado por tecnologia.**
 ---
+
 #### Histórico Acadêmico:
 
 - **Graduação em Medicina**  

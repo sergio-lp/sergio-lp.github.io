@@ -6,6 +6,7 @@ layout: page
 title: Contato
 permalink: /contact/
 feature_image: /assets/img/bg.jpg
+feature_title: Contato
 feature_text: |
   # Contato
 ---

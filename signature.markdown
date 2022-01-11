@@ -6,6 +6,8 @@ layout: page
 title: Assinatura eletrônica
 permalink: /signature/
 feature_image: /assets/img/bg.jpg
+feature_title: Assinatura eletrônica
+feature_description: Verificação de autenticidade de documentos, assinatura, inteiro teor de arquivos enviados/assinados por mim.
 feature_text: |
   # Assinatura eletrônica
   **Verificação de autenticidade de documentos, assinatura, inteiro teor de arquivos enviados/assinados por mim.**
