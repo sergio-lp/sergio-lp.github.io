@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Make sure Jekyll 3.3 is running
-#gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 # The plugins for the site
 group :jekyll_plugins do

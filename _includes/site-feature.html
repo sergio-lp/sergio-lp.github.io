@@ -12,7 +12,8 @@
 
 <script type="text/javascript">
   $(function() {
-    console.log("Olá mundo");
+    $('#labelDiv').css("display", "block")
+
     var header = $('.network-header'),
       canvas = $('<canvas></canvas>').appendTo(header)[0],
       ctx = canvas.getContext('2d'),
@@ -25,7 +26,9 @@
     canvas.height = header.outerHeight();
     canvas.style.display = 'block';
 
-
+    ctx.fillStyle = color
+    ctx.strokeStyle = color;
+    ctx.lineWidth = .2;
 
     var mousePosition = {
         x: canvas.width / 2,
@@ -38,24 +41,16 @@
         array: []
       };
 
-    function setCanvasTypefaceStyle(c) {
-      c.fillStyle = textColor
-      c.lineWidth = 3;
-      c.strokeStyle = textColor
-      c.font = 'bold 42px Lato';
-      c.textAlign = "center";
-    }
-
-    function setCanvasLineStyle(c) {
-      c.fillStyle = color;
-      c.lineWidth = .2;
-      c.strokeStyle = color;
-    }
-
-    function drawText(canvasElement) {
-      setCanvasLineStyle(ctx)
-
-    }
+    window.addEventListener('resize', function() {
+      dots.nb = ((window.innerWidth < 600) ? 20 : 100)
+      dots.array.length = 0
+      canvas.width = window.innerWidth
+      ctx.fillStyle = color;
+      ctx.lineWidth = .2;
+      ctx.strokeStyle = color;
+      mousePosition.x = canvas.width / 2;
+      mousePosition.y = canvas.height / 2;
+    });
 
     function Dot() {
       this.x = Math.random() * canvas.width;
@@ -123,7 +118,8 @@
       dot.line();
       dot.animate();
 
-      drawText(ctx);
+      ctx.closePath();
+      ctx.beginPath();
     }
 
     idle = setInterval(createDots, 1000 / 30);
@@ -144,14 +140,15 @@
 <noscript>
   <div class="feature" {% if feature_image %} style="background-image: url({{ feature_image }})" {% endif %}>
     <div class="container  typeset">
+      {{ feature_text | markdownify }}
     </div>
   </div>
 </noscript>
 
-
-<div class="network-header">
-</div>
-<div id="labelDiv">
-  <h1 class="page_title">{{ feature_title }}</h1>
-  <strong style="padding-top: 20px;">{{ feature_description }}</strong>
+<div class="header-top" id="header-top">
+  <div class="network-header"></div>
+  <div id="labelDiv" style="display: none">
+    <h1 class="page_title">{{ feature_title }}</h1>
+    <strong style="padding-top: 20px;" class="page_description">{{ feature_description }}</strong>
+  </div>
 </div>
