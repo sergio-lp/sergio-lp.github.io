@@ -81,10 +81,12 @@
  .img-unicamp {
 	 float: left !important;
 }
- .header {
-	 text-align: center;
-	 padding-bottom: 20px;
+
+.header {
+  text-align: center;
+  height: 120px !important;
 }
+
 /* .card {
 	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	 background-color: white;
