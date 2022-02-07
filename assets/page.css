@@ -90,10 +90,24 @@
 
 .header-title {
   font-size: 30px;
+  font-weight: bold;
 }
 
 h1 {
   font-size: 24px;
+}
+
+@media print{
+  * {
+      display:inline;
+  }
+  script, style { 
+      display:none; 
+  }
+  div {
+      page-break-inside:avoid;
+  }
+  
 }
 
 /* .card {
