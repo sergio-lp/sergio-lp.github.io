@@ -85,6 +85,7 @@
 .header {
   text-align: center;
   height: 120px !important;
+  line-height: 120px;
 }
 
 /* .card {
