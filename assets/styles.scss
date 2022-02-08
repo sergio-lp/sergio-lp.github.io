@@ -1,0 +1,405 @@
+@@ -1,404 +1,137 @@
+---
+styles: true
+---
+
+// Background colours
+$backgroundColour: #121212 !default;
+$codeBackgroundColour: #fafafa !default;
+$featureBackgroundColour: #f9fafa !default;
+$accentColour: #05bf85 !default;
+// Text colours
+$headingColour: #FFFFFF !default;
+$bodyColour: #FFFFFF !default;
+$linkColour: #D0D0D0 !default;
+$hoverColour: #FFF !default;
+$focusColour: #FFF !default;
+$captionColour: #FFF !default;
+$white: #ffffff !default;
+// Typography
+$bodytype: (
+  font-family: "Lato, sans-serif",
+  regular: 400,
+  bold: 700,
+  italic: italic,
+  cap-height: 0.75
+)
+!default;
+$headingtype: (
+  font-family: '"Lato", sans-serif',
+  regular: 400,
+  bold: 700,
+  cap-height: 0.75
+)
+!default;
+$monospacetype: (
+  font-family: "Menlo, monospace",
+  regular: 400,
+  cap-height: 0.68
+)
+!default;
+
+html {
+  scroll-behavior: smooth;
+}
+
+#labelDiv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80px;
+  bottom: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  margin-right: auto;
+  text-align: center;
+  width: 60%;
+  z-index: 1;
+}
+
+.header-top {
+  position: relative;
+  height: 100%;
+  left: 0;
+  right: 0;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.network-header {
+  height: 100%;
+  width: 100%;
+}
+
+
+.page_title {
+  font-size: 42px;
+  font-family: inherit;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+}
+
+.page_description {
+  font-weight: bolder;
+}
+
+.publication {
+  margin-bottom: 20px;
+}
+
+.project-image {
+  display: block;
+  margin: auto;
+}
+
+.docs {
+  background: #2c2c2c;
+  padding: 50px;
+}
+
+
+::selection {
+  background: #989898 !important;
+}
+
+::-moz-selection {
+  background: #989898 !important;
+}
+
+.button--nav {
+  align-self: baseline;
+}
+
+.list--nav {
+  text-align: start !important;
+  padding-inline-start: 20px !important;
+}
+
+li span {
+  position: relative;
+  left: -10px;
+}
+
+.img_doc {
+  float: right;
+  display: block;
+  align-self: center;
+}
+
+li::first-line {
+  color: #05bf85;
+}
+
+.pubauthors {
+  color: #D3D3D3;
+  font-size: 12pt;
+}
+
+.publocation {
+  color: #05bf85;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.project-title {
+  font-size: 22pt;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.footer {
+  background: #050505 !important;
+}
+
+ul {
+  list-style: none;
+}
+
+li::before {
+  content: "\2022";
+  color: #05bf85;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: block;
+  width: auto;
+  margin-bottom: 10px;
+  height: auto;
+  padding: 20px;
+  background: #2c2c2c;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+  padding: 20px 16px;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.chip {
+  display: inline-block;
+  margin-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  line-height: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  font-size: 9pt;
+  border-width: 2px;
+  border-color: #05bf85;
+  background-color: #121212;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+
+.chip:hover {
+  background-color: #05bf85;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1920px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.next,
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.next:hover,
+.prev:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#showImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#showImg:hover {
+  opacity: 0.7;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgb(0,0,0);
+  /* Fallback color */
+  background-color: rgba(0,0,0,0.9);
+  /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+#caption,
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:focus,
+.close:hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+// Font import, if you're using a non-standard web font
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import "alembic";
