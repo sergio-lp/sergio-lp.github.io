@@ -97,18 +97,6 @@ h1 {
   font-size: 24px;
 }
 
-@media print{
-  * {
-      display:inline;
-  }
-  script, style { 
-      display:none; 
-  }
-  div {
-      page-break-inside:avoid;
-  }
-  
-}
 
 /* .card {
 	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
