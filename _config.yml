@@ -100,11 +100,11 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
   16: 'favicon-16x16.png'
   32: 'favicon-32x32.png'
+  512: 'favicon-512x512.png'
 #  96: '/assets/logos/logo@96px.png'
 #  120: '/assets/logos/logo@120px.png'
 #  144: '/assets/logos/logo@144px.png'
 #  180: '/assets/logos/logo@180px.png'
-#  512: '/assets/logos/logo@512px.png'
 #  1024: '/assets/logos/logo@1024px.png'
 
 # 9. Site navigation
